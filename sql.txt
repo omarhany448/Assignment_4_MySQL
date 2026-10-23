@@ -1,0 +1,22 @@
+14)
+
+CREATE USER 'store_manager'@'localhost'
+IDENTIFIED BY 'StrongPassword123!';
+
+GRANT SELECT, INSERT, UPDATE
+ON retail_store.*
+TO 'store_manager'@'localhost';
+
+
+15)
+
+REVOKE UPDATE
+ON retail_store.*
+FROM 'store_manager'@'localhost';
+
+
+16)
+
+GRANT DELETE
+ON retail_store.Sales
+TO 'store_manager'@'localhost';
